@@ -1,0 +1,78 @@
+{
+  "profit": {
+    "value": 12895.5,
+    "percentageChange": 14,
+    "period": "Since last week"
+  },
+  "salesReport": {
+    "data": [
+      { "day": "Sun", "value": 8000 },
+      { "day": "Mon", "value": 6000 },
+      { "day": "Tue", "value": 12000 },
+      { "day": "Wed", "value": 15000 },
+      { "day": "Thu", "value": 9000 },
+      { "day": "Fri", "value": 7000 },
+      { "day": "Sat", "value": 11000 }
+    ]
+  },
+  "analyticalAI": {
+    "period": "September 2023",
+    "data": [
+      { "day": 1, "value": 18000 },
+      { "day": 5, "value": 30000 },
+      { "day": 10, "value": 45000 },
+      { "day": 15, "value": 35000 },
+      { "day": 20, "value": 40000 },
+      { "day": 25, "value": 32000 },
+      { "day": 30, "value": 38000 }
+    ]
+  },
+  "invoices": {
+    "invoiceCount": 3251,
+    "list": [
+      {
+        "customerName": "Ariana McCoy",
+        "customerImage": "https://i.pravatar.cc/40?u=ariana",
+        "date": "31 Aug 2023",
+        "amount": 3230.2,
+        "productId": "001423",
+        "status": "Paid"
+      },
+      {
+        "customerName": "Jacob Jones",
+        "customerImage": "https://i.pravatar.cc/40?u=jacob",
+        "date": "30 Aug 2023",
+        "amount": 5630.0,
+        "productId": "004533",
+        "status": "Unpaid"
+      },
+      {
+        "customerName": "Marvin Butcher",
+        "customerImage": "https://i.pravatar.cc/40?u=marvin",
+        "date": "30 Aug 2023",
+        "amount": 4239.0,
+        "productId": "001784",
+        "status": "Paid"
+      },
+      {
+        "customerName": "Ralph Edwards",
+        "customerImage": "https://i.pravatar.cc/40?u=ralph",
+        "date": "29 Aug 2023",
+        "amount": 3082.2,
+        "productId": "001515",
+        "status": "Paid"
+      }
+    ]
+  },
+  "activity": {
+    "percentageChange": 13,
+    "period": "Since last week",
+    "progressValue": 85,
+    "stats": {
+      "transactions": 452,
+      "sales": 715,
+      "payouts": 412,
+      "reports": 128
+    }
+  }
+}

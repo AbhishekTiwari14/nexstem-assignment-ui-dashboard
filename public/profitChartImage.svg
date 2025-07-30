@@ -1,0 +1,105 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="rgb(147, 151, 235)"/>
+  
+  <!-- Improved Cloud -->
+  <ellipse cx="275" cy="85" rx="25" ry="15" fill="white"/>
+  <ellipse cx="290" cy="80" rx="18" ry="12" fill="white"/>
+  <ellipse cx="305" cy="85" rx="20" ry="14" fill="white"/>
+  <ellipse cx="260" cy="80" rx="15" ry="10" fill="white"/>
+  <ellipse cx="285" cy="75" rx="12" ry="8" fill="white"/>
+  
+  <!-- 3D Steel/Metal table (smoother) -->
+  <!-- Table top -->
+  <rect x="40" y="180" width="320" height="18" rx="4" fill="#C8C8C8"/>
+  <!-- Table front face -->
+  <rect x="40" y="198" width="320" height="6" fill="#B0B0B0"/>
+  <!-- Table right side (3D perspective) -->
+  <polygon points="360,180 370,175 370,193 360,198" fill="#989898"/>
+  <!-- Table top highlight (smoother gradient effect) -->
+  <rect x="40" y="180" width="320" height="4" rx="4" fill="#E0E0E0"/>
+  <!-- Smooth metal reflection -->
+  <rect x="45" y="184" width="310" height="1" fill="#F0F0F0" opacity="0.8"/>
+  <rect x="45" y="190" width="310" height="1" fill="#D8D8D8" opacity="0.6"/>
+  
+  <!-- Shadows of objects on table -->
+  <ellipse cx="170" cy="200" rx="50" ry="4" fill="#000000" opacity="0.2"/>
+  <ellipse cx="90" cy="200" rx="25" ry="3" fill="#000000" opacity="0.2"/>
+  <ellipse cx="280" cy="200" rx="28" ry="3" fill="#000000" opacity="0.2"/>
+  <ellipse cx="300" cy="200" rx="15" ry="2" fill="#000000" opacity="0.2"/>
+  <ellipse cx="320" cy="200" rx="20" ry="3" fill="#000000" opacity="0.2"/>
+  
+  <!-- Main laptop/screen (resting on desk, heavily overlapping with invoice) -->
+  <rect x="120" y="105" width="120" height="75" rx="6" fill="#2D3748"/>
+  <rect x="126" y="111" width="108" height="60" fill="#1A202C"/>
+  
+  <!-- Chart in main screen -->
+  <rect x="130" y="120" width="20" height="25" fill="#FF6B35"/>
+  <rect x="155" y="127" width="20" height="18" fill="rgb(167, 171, 255)"/>
+  <rect x="180" y="123" width="20" height="22" fill="#00D4FF"/>
+  <rect x="205" y="120" width="20" height="25" fill="#00FF88"/>
+  
+  <!-- Line chart in screen -->
+  <polyline points="130,160 150,157 170,153 190,150 210,147 225,145" 
+            stroke="#FF4444" stroke-width="2" fill="none"/>
+  
+  <!-- Laptop base (resting on desk) -->
+  <rect x="118" y="180" width="124" height="6" rx="4" fill="#2D3748"/>
+  
+  <!-- Invoice document (heavily overlapping with laptop) -->
+  <rect x="60" y="85" width="60" height="80" rx="3" fill="#F8F9FA" stroke="#DEE2E6" stroke-width="1"/>
+  <rect x="65" y="91" width="50" height="6" fill="#FF6B35"/>
+  <rect x="65" y="103" width="30" height="3" fill="rgb(167, 171, 255)"/>
+  <rect x="65" y="110" width="35" height="3" fill="#00D4FF"/>
+  <rect x="65" y="117" width="25" height="3" fill="#00FF88"/>
+  <circle cx="100" cy="145" r="6" fill="#00FF88"/>
+  <path d="M97,145 L99,147 L103,142" stroke="white" stroke-width="1.5" fill="none"/>
+  
+  <!-- Pie chart with 3D effect (very close to mobile, overlapping) -->
+  <circle cx="270" cy="125" r="25" fill="#F8F9FA" stroke="#DEE2E6" stroke-width="1"/>
+  <!-- Main pie slices -->
+  <path d="M270,100 A25,25 0 0,1 288,137 L270,125 Z" fill="rgb(167, 171, 255)"/>
+  <path d="M288,137 A25,25 0 0,1 252,137 L270,125 Z" fill="#FF6B35"/>
+  <path d="M252,137 A25,25 0 0,1 270,100 L270,125 Z" fill="#00D4FF"/>
+  
+  <!-- 3D pie slice coming out -->
+  <path d="M285,130 A25,25 0 0,0 295,120 L295,115 A25,25 0 0,0 288,137 Z" fill="rgb(137, 141, 225)"/>
+  <path d="M295,120 L300,117 A25,25 0 0,0 290,107 L285,110 A25,25 0 0,1 295,120 Z" fill="rgb(147, 151, 235)"/>
+  
+  <!-- Mobile device (resting on desk, heavily overlapping with pie chart) -->
+  <rect x="260" y="140" width="40" height="40" rx="6" fill="#2D3748"/>
+  <rect x="264" y="146" width="32" height="30" fill="#1A202C"/>
+  <rect x="266" y="152" width="28" height="8" fill="rgb(167, 171, 255)"/>
+  <rect x="266" y="162" width="14" height="8" fill="#FF6B35"/>
+  <rect x="282" y="162" width="12" height="8" fill="#00D4FF"/>
+  <circle cx="280" cy="174" r="2" fill="#A0AEC0"/>
+  <!-- Mobile base resting on desk -->
+  <rect x="260" y="180" width="40" height="4" rx="4" fill="#2D3748"/>
+  
+  <!-- 2D Graph with 2 curvy lines (overlapping with other elements) -->
+  <rect x="300" y="100" width="80" height="60" rx="3" fill="#F8F9FA" stroke="#DEE2E6" stroke-width="1"/>
+  <!-- Grid lines -->
+  <line x1="305" y1="110" x2="375" y2="110" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="305" y1="125" x2="375" y2="125" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="305" y1="140" x2="375" y2="140" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="315" y1="105" x2="315" y2="155" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="340" y1="105" x2="340" y2="155" stroke="#E0E0E0" stroke-width="0.5"/>
+  <line x1="365" y1="105" x2="365" y2="155" stroke="#E0E0E0" stroke-width="0.5"/>
+  <!-- First curvy line -->
+  <polyline points="305,140 315,125 325,115 335,120 345,108 355,112 365,105 375,110" 
+            stroke="#FF6B35" stroke-width="2" fill="none"/>
+  <!-- Second curvy line -->
+  <polyline points="305,150 315,145 325,135 335,130 345,125 355,135 365,130 375,125" 
+            stroke="#00D4FF" stroke-width="2" fill="none"/>
+  <!-- Data points for first line -->
+  <circle cx="315" cy="125" r="1.5" fill="#FF6B35"/>
+  <circle cx="325" cy="115" r="1.5" fill="#FF6B35"/>
+  <circle cx="345" cy="108" r="1.5" fill="#FF6B35"/>
+  <circle cx="365" cy="105" r="1.5" fill="#FF6B35"/>
+  <!-- Data points for second line -->
+  <circle cx="325" cy="135" r="1.5" fill="#00D4FF"/>
+  <circle cx="335" cy="130" r="1.5" fill="#00D4FF"/>
+  <circle cx="355" cy="135" r="1.5" fill="#00D4FF"/>
+  <circle cx="375" cy="125" r="1.5" fill="#00D4FF"/>
+  
+</svg>
