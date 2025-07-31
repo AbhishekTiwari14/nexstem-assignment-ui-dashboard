@@ -38,7 +38,7 @@ const Sidebar = ({ openSidebar, setOpenSidebar }: SidebarProps) => {
       )}
 
       <aside
-        className={`fixed z-50 top-0 left-0 h-screen md:h-full w-full lg:w-64 p-4 bg-[#1a1c1f] transition-transform duration-300 md:relative md:translate-x-0 mr-4
+        className={`fixed z-50 top-0 left-0 h-screen md:h-full w-full lg:w-56 p-4 bg-[#1a1c1f] transition-transform duration-300 md:relative md:translate-x-0 mr-4
           ${openSidebar ? "translate-x-0" : "-translate-x-full"}
         `}
       >
@@ -83,7 +83,7 @@ const Sidebar = ({ openSidebar, setOpenSidebar }: SidebarProps) => {
         </ul>
 
         {/* desktop */}
-        <div className="hidden md:flex flex-col w-64 h-full">
+        <div className="hidden md:flex flex-col w-56 h-full">
           {" "}
           <div className="flex flex-col flex-1 justify-between overflow-hidden">
             <ul className="space-y-2 px-2 mt-8 overflow-y-auto">

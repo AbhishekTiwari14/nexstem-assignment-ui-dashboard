@@ -32,3 +32,17 @@ export type AnalyticalAi = {
   period: string
   data: SalesReportDataPoint[]
 }
+
+export type ActivityStats = {
+  transactions: number
+  sales: number
+  payouts: number
+  reports: number
+}
+
+export type ActivityData = {
+  percentageChange: number
+  period: string
+  progressValue: number
+  stats: ActivityStats
+}
