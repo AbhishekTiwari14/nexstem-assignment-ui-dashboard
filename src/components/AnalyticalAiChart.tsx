@@ -11,6 +11,7 @@ import {
   YAxis,
   type DotProps,
 } from "recharts"
+import { EllipsisVertical } from "lucide-react"
 
 const AnalyticalAiChart = () => {
   const [analyticalData, setAnalyticalData] = useState<AnalyticalAi | null>(
@@ -29,9 +30,14 @@ const AnalyticalAiChart = () => {
   )
 
   return (
-    <div className="rounded-2xl bg-[#2e2f39] text-white p-4 w-full max-w-[320px] shadow-md">
-      <h2 className="text-md font-semibold">Analytical AI</h2>
-      <p className="text-sm text-gray-400 mb-2">{analyticalData?.period}</p>
+    <div className="rounded-2xl bg-[#2e2f39] text-white p-4 w-full max-w-[320px] shadow-md ">
+      <div className="flex justify-between items-center">
+        <div>
+          <p className="text-md font-semibold">Analytical AI</p>
+          <p className="text-sm text-gray-400 mb-2">{analyticalData?.period}</p>
+        </div>
+        <EllipsisVertical className="text-end" />
+      </div>
 
       <div className="h-[250px]">
         <ResponsiveContainer width="100%" height="100%">
@@ -102,7 +108,7 @@ interface CustomDotProps extends DotProps {
   payload?: {
     value: number
   }
-  maxEntryValue?: number 
+  maxEntryValue?: number
 }
 
 const MaxValueDot = ({ cx, cy, payload, maxEntryValue }: CustomDotProps) => {

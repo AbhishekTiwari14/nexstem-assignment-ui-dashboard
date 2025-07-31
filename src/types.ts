@@ -13,6 +13,11 @@ export type Invoice = {
   status: "Paid" | "Unpaid"
 }
 
+export type InvoiceData = {
+  invoiceCount: number
+  list: Invoice[]
+}
+
 export type SalesReportDataPoint = {
   day: string
   value: number

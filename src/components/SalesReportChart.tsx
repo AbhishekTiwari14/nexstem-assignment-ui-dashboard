@@ -69,7 +69,7 @@ const SalesReportChart = () => {
   }, [])
 
   return (
-    <div className="rounded-2xl shadow-md p-6 h-[350px] bg-[#363740] text-white w-full">
+    <div className="rounded-2xl shadow-md p-6 h-[350px] bg-[#2e2f39] text-white w-full">
       <div className="flex items-center justify-between mb-4">
         <div>
           <h2 className="text-lg font-semibold">Sales Report</h2>
