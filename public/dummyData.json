@@ -5,7 +5,7 @@
     "period": "Since last week"
   },
   "salesReport": {
-    "data": [
+    "earnings": [
       { "day": "Sun", "value": 8000 },
       { "day": "Mon", "value": 6000 },
       { "day": "Tue", "value": 12000 },
@@ -13,6 +13,15 @@
       { "day": "Thu", "value": 9000 },
       { "day": "Fri", "value": 7000 },
       { "day": "Sat", "value": 11000 }
+    ],
+    "payments": [
+      { "day": "Sun", "value": 3000 },
+      { "day": "Mon", "value": 5000 },
+      { "day": "Tue", "value": 15000 },
+      { "day": "Wed", "value": 8000 },
+      { "day": "Thu", "value": 3000 },
+      { "day": "Fri", "value": 10000 },
+      { "day": "Sat", "value": 5000 }
     ]
   },
   "analyticalAI": {

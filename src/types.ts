@@ -1,7 +1,7 @@
 export type Profit = {
-  value?: number
-  percentageChange?: number
-  period?: string
+  value: number
+  percentageChange: number
+  period: string
 }
 
 export type Invoice = {
@@ -19,7 +19,6 @@ export type SalesReportDataPoint = {
 }
 
 export type SalesReport = {
-  earnings: string
-  period: string
-  data: SalesReportDataPoint[]
+  earnings: SalesReportDataPoint[]
+  payments: SalesReportDataPoint[]
 }

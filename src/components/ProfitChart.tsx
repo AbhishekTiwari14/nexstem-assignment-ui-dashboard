@@ -1,15 +1,16 @@
 import { Banknote, EllipsisVertical } from "lucide-react"
 import { useEffect, useState } from "react"
 import type { Profit } from "../types"
+import { fetchData } from "../api/fetchData"
 
 const ProfitChart = () => {
-  const [profitData, setProfitData] = useState<Profit>({})
+  const [profitData, setProfitData] = useState<Profit | null>(null)
   useEffect(() => {
-    fetch("./dummyData.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setProfitData(data?.profit)
-      })
+    const loadData = async () => {
+      const profit = await fetchData("profit")
+      if (profit) setProfitData(profit)
+    }
+    loadData()
   }, [])
   return (
     <div className="relative w-full h-[350px] rounded-2xl overflow-hidden">
