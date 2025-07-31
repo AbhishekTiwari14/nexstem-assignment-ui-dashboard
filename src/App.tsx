@@ -4,6 +4,7 @@ import { useState } from "react"
 import Sidebar from "./components/Sidebar"
 import ProfitChart from "./components/ProfitChart"
 import SalesReportChart from "./components/SalesReportChart"
+import AnalyticalAiChart from "./components/AnalyticalAiChart"
 
 function App() {
   const [openSidebar, setOpenSidebar] = useState(false)
@@ -19,7 +20,7 @@ function App() {
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8 w-full">
             <ProfitChart />
             <SalesReportChart />
-            <SalesReportChart />
+            <AnalyticalAiChart />
           </div>
         </main>
       </div>

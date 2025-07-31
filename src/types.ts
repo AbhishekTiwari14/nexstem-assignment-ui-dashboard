@@ -22,3 +22,8 @@ export type SalesReport = {
   earnings: SalesReportDataPoint[]
   payments: SalesReportDataPoint[]
 }
+
+export type AnalyticalAi = {
+  period: string
+  data: SalesReportDataPoint[]
+}
