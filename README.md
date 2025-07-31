@@ -1,69 +1,113 @@
-# React + TypeScript + Vite
+# UI Admin Dashboard – Nexstem Frontend Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive dashboard UI built using **React**, **TypeScript**, and **Tailwind CSS**, inspired by the [Spectra CRM design](https://dribbble.com/shots/22541272-Spectra-CRM-dashboard). This project was created as part of the Frontend Intern assignment.
 
-Currently, two official plugins are available:
+## 🖼️ Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**[View Deployed Site](https://nexstem-assignment-ui-dashboard.vercel.app/)**
 
-## Expanding the ESLint configuration
+## 📽️ Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![alt text](image.png)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![alt text](image-1.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🎥 Screen Recording
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+[Click here to view screen recording](https://youtu.be/Aes7CmoYzlY)
+
+---
+
+# 🔧 Setup Instructions
+
+## 1. Clone the repository
+
+git clone https://github.com/AbhishekTiwari14/nexstem-assignment-ui-dashboard
+
+## 2. Install dependencies
+
+npm install
+
+## 3. Start the development server
+
+npm run dev
+
+## 🚀 Deployment
+
+The project is deployed using Vercel.
+
+## 🛠️ Tech Stack
+
+- React with TypeScript
+
+- Tailwind CSS for utility-first styling
+
+- Recharts for charts and graphs
+
+- Native IntersectionObserver for scroll-based animations
+
+- Modular component structure
+
+## 📦 Features
+
+Responsive layout (desktop → tablet → mobile)
+
+Custom UI components (no UI libraries used)
+
+Animated pie chart and bar chart interactions
+
+Hover and animation effects for interactivity
+
+Modular & clean file organization
+
+All data managed via useState and simulated fetches
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/         # Reusable components (Charts, Tables, etc.)
+├── api/                # Mock data fetching functions
+├── types/              # TypeScript type definitions
+├── App.tsx             # Main layout
+└── index.tsx           # Entry point
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🤔 Notes & Decisions
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Used Tailwind CSS for styling speed and consistency.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Avoided all UI libraries (e.g., MUI, AntD) as per instructions.
+
+Used IntersectionObserver for scroll-triggered animations instead of animation libraries.
+
+Data is loaded via mock fetchData() functions and managed with useState.
+
+Designed components mobile-first and layered up for larger breakpoints.
+
+## ✅ Requirements Checklist
+
+| Requirement                        | Implemented |
+| ---------------------------------- | ----------- |
+| React + TypeScript                 | ✅          |
+| Tailwind CSS                       | ✅          |
+| No UI libraries                    | ✅          |
+| Responsive design                  | ✅          |
+| State management with hooks        | ✅          |
+| Custom components (charts, tables) | ✅          |
+| UI interactivity / animation       | ✅          |
+| Hosted demo + README               | ✅          |
+
+## 📄 License
+
+This project is for educational/demo purposes and is not intended for production use.
+
+## 👋 Acknowledgments
+
+Design reference:
+Spectra CRM Dashboard – Dribbble
+
+```
+
 ```
