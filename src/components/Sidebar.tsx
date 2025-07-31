@@ -32,17 +32,17 @@ const Sidebar = ({ openSidebar, setOpenSidebar }: SidebarProps) => {
       {/* Mobile overlay */}
       {openSidebar && (
         <div
-          className="fixed inset-0 z-40 bg-black/50 md:hidden"
+          className="fixed inset-0 z-40 bg-black/50 lg:hidden"
           onClick={() => setOpenSidebar(false)}
         />
       )}
 
       <aside
-        className={`fixed z-50 top-0 left-0 h-screen md:h-full w-full lg:w-56 p-4 bg-[#1a1c1f] transition-transform duration-300 md:relative md:translate-x-0 mr-4
+        className={`fixed z-50 top-0 left-0 h-screen lg:h-full w-full lg:w-56 p-4 bg-[#1a1c1f] transition-transform duration-300 lg:relative lg:translate-x-0 mr-4
           ${openSidebar ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <div className="flex justify-between items-center mt-2 mb-6 md:hidden">
+        <div className="flex justify-between items-center mt-2 mb-6 lg:hidden">
           <button onClick={() => setOpenSidebar(false)}>
             <X className="w-5 h-5 text-white" />
           </button>
@@ -55,11 +55,11 @@ const Sidebar = ({ openSidebar, setOpenSidebar }: SidebarProps) => {
           </button>
         </div>
 
-        <div className="text-2xl mt-24 font-bold text-white mb-12 px-2 flex items-center justify-center md:hidden">
+        <div className="text-2xl mt-24 font-bold text-white mb-12 px-2 flex items-center justify-center lg:hidden">
           <p>SPECTRA</p>
         </div>
 
-        <ul className="space-y-2 px-2 md:hidden">
+        <ul className="space-y-2 px-2 lg:hidden">
           {links.map(({ name, icon: Icon }) => {
             const isActive = name === active
             return (
@@ -83,7 +83,7 @@ const Sidebar = ({ openSidebar, setOpenSidebar }: SidebarProps) => {
         </ul>
 
         {/* desktop */}
-        <div className="hidden md:flex flex-col w-56 h-full">
+        <div className="hidden lg:flex flex-col w-56 h-full">
           {" "}
           <div className="flex flex-col flex-1 justify-between overflow-hidden">
             <ul className="space-y-2 px-2 mt-8 overflow-y-auto">

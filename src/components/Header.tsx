@@ -11,10 +11,10 @@ const Header = ({ onToggleSidebar }: { onToggleSidebar: () => void }) => {
         <Menu size={36} className="text-white" />
       </button>
       {/* Desktop */}
-      <span className="hidden md:inline text-xl font-bold text-white pl-8 pr-32 text-center">
+      <span className="hidden lg:inline text-xl font-bold text-white pl-8 pr-32 text-center">
         SPECTRA
       </span>
-      <span className="hidden md:inline text-2xl font-bold text-white">
+      <span className="hidden lg:inline text-2xl font-bold text-white">
         Overview
       </span>
       <div className="mx-auto hidden lg:flex items-center rounded-md px-4 py-3 w-full max-w-md border border-transparent focus-within:border-white transition">
